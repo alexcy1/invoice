@@ -1,3 +1,6 @@
+
+// /app/lib/utils
+
 import { Revenue } from './definitions';
 
 export const formatCurrency = (amount: number) => {
@@ -34,6 +37,8 @@ export const generateYAxis = (revenue: Revenue[]) => {
 
   return { yAxisLabels, topLabel };
 };
+
+
 
 export const generatePagination = (currentPage: number, totalPages: number) => {
   // If the total number of pages is 7 or less,
